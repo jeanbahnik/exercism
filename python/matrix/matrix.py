@@ -4,9 +4,9 @@ class Matrix(object):
         self.rows = []
         for row in rows:
             self.rows.append([int(n) for n in row.split()])
-        row_count = len(self.rows[0])
+
         self.columns = []
-        for index in range(0, row_count):
+        for index in range(0, len(self.rows[0])):
             column = []
             for row in self.rows:
                 column.append(row[index])
