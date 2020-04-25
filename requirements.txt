@@ -1,2 +1,0 @@
-Pygments==2.3.1
-redgreenunittest==0.1.1
