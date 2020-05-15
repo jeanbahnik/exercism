@@ -1,5 +1,4 @@
 # check the Array library to see if something can help you simplify the extract_columns code
-# check the String library, maybe there is something to deal with lines idiomatically?
 
 class Matrix
 attr_reader :rows, :columns
@@ -10,7 +9,7 @@ attr_reader :rows, :columns
   end
 
   def extract_rows(matrix)
-    matrix.split(/\n/).map! {|i| i.split.map!(&:to_i)}
+    matrix.lines.map! {|i| i.split.map!(&:to_i)}
   end
 
   def extract_columns
